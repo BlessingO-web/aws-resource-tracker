@@ -23,3 +23,7 @@ chmod +x aws_resource_tracker.sh
 0 8 * * * /home/ubuntu/aws_resource_tracker.sh >> /home/ubuntu/aws_resource_report.log 2>&1
 
 #Output is formatted using AWS CLI --query and --output table
+
+This script uses the AWS CLI to query core AWS services.
+JMESPath queries are applied to extract only relevant fields.
+Output is formatted as tables for readability and can be scheduled using cron for automated reporting.
